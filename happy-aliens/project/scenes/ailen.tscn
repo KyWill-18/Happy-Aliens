@@ -3,10 +3,15 @@
 [ext_resource type="Script" uid="uid://ch2mpskr04sva" path="res://project/scripts/ailen.gd" id="1_1ci6x"]
 [ext_resource type="Texture2D" uid="uid://cxagxhnae3vnh" path="res://project/sprites/alienPink_round.png" id="2_1y1bf"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sd7ng"]
+radius = 35.014282
+
 [node name="Ailen" type="RigidBody2D" unique_id=532844673]
 script = ExtResource("1_1ci6x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=18346821]
+position = Vector2(163, 202)
+shape = SubResource("CircleShape2D_sd7ng")
 
 [node name="AlienPinkRound" type="Sprite2D" parent="." unique_id=1539076474]
 position = Vector2(163, 202)

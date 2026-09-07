@@ -1,5 +1,8 @@
 [gd_scene format=4 uid="uid://bd1r8mueol5jn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vshgq"]
+size = Vector2(1150, 128)
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sd7ng"]
 load_path = "res://.godot/imported/grass.png-f886db1038da23fa3f6c5f3e79c9b663.ctex"
 
@@ -31,6 +34,8 @@ sources/4 = SubResource("TileSetAtlasSource_40yqg")
 [node name="Ground" type="StaticBody2D" unique_id=275491657]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=975827399]
+position = Vector2(576, 431)
+shape = SubResource("RectangleShape2D_vshgq")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1558938533]
 position = Vector2(0, 144)
