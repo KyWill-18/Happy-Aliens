@@ -12,7 +12,7 @@ var max_angle := 10
 #basic firing 
 func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("fire"):
-			var alien : RigidBody2D = preload("res://project/scenes/ailen.tscn").instantiate()
+			var alien : RigidBody2D = preload("res://project/scenes/alien.tscn").instantiate()
 			add_sibling(alien)
 			alien.global_position = global_position
 			alien.apply_impulse(Vector2(1,0).rotated(angle) * power)

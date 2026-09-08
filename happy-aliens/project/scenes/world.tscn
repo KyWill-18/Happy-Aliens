@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c5oqcjuglpfs7"]
 
-[ext_resource type="PackedScene" uid="uid://cg4asb1ns567m" path="res://project/scenes/ailen.tscn" id="1_vshgq"]
+[ext_resource type="PackedScene" uid="uid://cg4asb1ns567m" path="res://project/scenes/alien.tscn" id="1_vshgq"]
 [ext_resource type="PackedScene" uid="uid://bd1r8mueol5jn" path="res://project/scenes/ground.tscn" id="2_563tq"]
 [ext_resource type="PackedScene" uid="uid://5gtdslah2se8" path="res://project/scenes/cannon.tscn" id="3_563tq"]
 [ext_resource type="Texture2D" uid="uid://bw1ckujmvhnha" path="res://project/sprites/colored_grass.png" id="4_h8dfu"]
@@ -29,4 +29,4 @@ texture = ExtResource("4_h8dfu")
 position = Vector2(1069, 462)
 
 [node name="Sad_Alien" parent="." unique_id=689703200 instance=ExtResource("6_w6q4j")]
-position = Vector2(971, 269)
+position = Vector2(963, 266)
