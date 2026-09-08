@@ -1,8 +1,14 @@
 extends Node2D
 
 var power := 500.0
-var angle := -TAU/8
+var min_power := 10
+var max_power := 1500
 
+var angle := -TAU/8
+var min_angle := -TAU/4
+var max_angle := 10
+
+ 
 #basic firing 
 func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("fire"):
@@ -18,6 +24,8 @@ func _physics_process(delta: float) -> void:
 			
 		if Input.is_action_just_pressed("angle_down"):
 			angle += 0.1
+		
+		angle = clamp(angle, min_angle, max_angle)
 			
 			
 		#power controls
@@ -26,6 +34,8 @@ func _physics_process(delta: float) -> void:
 		
 		if Input.is_action_just_pressed("power_decrease"):
 			power -= 50
+			
+		power = clamp(power, min_power, max_power)
 			
 			
 			
