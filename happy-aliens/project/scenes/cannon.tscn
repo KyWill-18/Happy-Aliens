@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5gtdslah2se8"]
 
-[ext_resource type="Script" uid="uid://yc2kbo8ecoo2" path="res://cannon.gd" id="1_vs7lm"]
+[ext_resource type="Script" uid="uid://yc2kbo8ecoo2" path="res://project/scripts/cannon.gd" id="1_vs7lm"]
 
 [node name="Cannon" type="Node2D" unique_id=251679205]
 position = Vector2(1, 2)
