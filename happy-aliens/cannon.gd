@@ -11,12 +11,22 @@ func _physics_process(delta: float) -> void:
 			alien.global_position = global_position
 			alien.apply_impulse(Vector2(1,0).rotated(angle) * power)
 			
+			
 		#angle controls	
-		if Input.is_action_pressed("angle_up"):
+		if Input.is_action_just_pressed("angle_up"):
 			angle -= 0.1
 			
 		if Input.is_action_just_pressed("angle_down"):
 			angle += 0.1
+			
+			
+		#power controls
+		if Input.is_action_just_pressed("power_increase"):
+			power += 50
+		
+		if Input.is_action_just_pressed("power_decrease"):
+			power -= 50
+			
 			
 			
 func _draw() -> void:
