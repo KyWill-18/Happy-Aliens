@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb1ef4ynso8dq"
-path="res://.godot/imported/spritesheet_tiles.png-7326f33d687b7343cf9053fc0ae72553.ctex"
+uid="uid://dbbms3hw1hbfe"
+path="res://.godot/imported/alienGreen_round.png-02d4168c7dc52fe688fe66c2ce0f7cf3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spritesheet_tiles.png"
-dest_files=["res://.godot/imported/spritesheet_tiles.png-7326f33d687b7343cf9053fc0ae72553.ctex"]
+source_file="res://sad_alien/alienGreen_round.png"
+dest_files=["res://.godot/imported/alienGreen_round.png-02d4168c7dc52fe688fe66c2ce0f7cf3.ctex"]
 
 [params]
 

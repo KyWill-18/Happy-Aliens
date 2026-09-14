@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btipnj37d4j03"
-path="res://.godot/imported/alienBlue_round.png-55185b54db87bd85342e6fe0503b7c2c.ctex"
+uid="uid://bo6w5hxwp74oy"
+path="res://.godot/imported/grass.png-c247c0365aeb47ab5aba0b7ef95f82af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/alienBlue_round.png"
-dest_files=["res://.godot/imported/alienBlue_round.png-55185b54db87bd85342e6fe0503b7c2c.ctex"]
+source_file="res://ground/grass.png"
+dest_files=["res://.godot/imported/grass.png-c247c0365aeb47ab5aba0b7ef95f82af.ctex"]
 
 [params]
 

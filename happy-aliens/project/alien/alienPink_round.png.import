@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gir4w3ae5i6n"
-path="res://.godot/imported/elementWood012.png-a0f26805f85482834c51a9dfb0b399d0.ctex"
+uid="uid://cxagxhnae3vnh"
+path="res://.godot/imported/alienPink_round.png-9e60fd3e80c3a8794c49a577578bf936.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/elementWood012.png"
-dest_files=["res://.godot/imported/elementWood012.png-a0f26805f85482834c51a9dfb0b399d0.ctex"]
+source_file="res://alien/alienPink_round.png"
+dest_files=["res://.godot/imported/alienPink_round.png-9e60fd3e80c3a8794c49a577578bf936.ctex"]
 
 [params]
 
