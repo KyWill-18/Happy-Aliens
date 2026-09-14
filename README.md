@@ -1,9 +1,14 @@
-# Execise 1 -> __Happy Aliens__
+# Execise 1: __Happy Aliens__ by Kyla Williams
 
-## Happy Aliens by Kyla Williams
+
+### Description
 In this game the player has to fire a happy alien to strike a sad grey alien and make them happy and colorful again!
 
 ### Controls
+W/UP ARROW -> Increase Angle
+S/DOWN ARROW -> Decrease Angle
+A/LEFT ARROW -> Decrease Power
+D/RIGHT ARROW -> Increase Power
 
 
 ## Increment 1: 2D Physics-Based Gameplay
