@@ -12,6 +12,7 @@ var max_angle := 0
 #basic firing
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("fire"):
+		$AudioStreamPlayer2D.play()
 		var alien : RigidBody2D = preload("res://alien/alien.tscn").instantiate()
 		add_sibling(alien)
 		alien.global_position = global_position

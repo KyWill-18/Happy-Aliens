@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dayh7llmpcjwd" path="res://sad_alien/sad_alien.gd" id="1_k8kax"]
 [ext_resource type="Texture2D" uid="uid://btipnj37d4j03" path="res://sad_alien/alienBlue_round.png" id="1_kfeqt"]
+[ext_resource type="AudioStream" uid="uid://bjfuw80xy8v3b" path="res://sad_alien/815696__redeam__happy-jingle.wav" id="3_drq6h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_awtvj"]
 radius = 34.0
@@ -18,5 +19,8 @@ shape = SubResource("CapsuleShape2D_awtvj")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1001118807]
 modulate = Color(0.2835632, 0.2835632, 0.2835632, 1)
 texture = ExtResource("1_kfeqt")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1100886985]
+stream = ExtResource("3_drq6h")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
