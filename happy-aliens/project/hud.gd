@@ -8,4 +8,7 @@ func _ready() -> void:
 	
 	
 func _update_hud() -> void:
-	$%AmmoLabel.text = "Ammo %d" % cannon.ammo	
+	if cannon.ammo > 0:
+		$%AmmoLabel.text = "Ammo: %d" % cannon.ammo	
+	else: 
+		$AmmoLabel.text = "Out of ammo"
