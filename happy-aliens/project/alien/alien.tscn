@@ -4,10 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://cxagxhnae3vnh" path="res://alien/alienPink_round.png" id="2_1y1bf"]
 [ext_resource type="AudioStream" uid="uid://0tbs05r54vy8" path="res://alien/869168__cat-fox_alex__sine-fx-2.wav" id="3_ewdm2"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ewdm2"]
+friction = 0.25
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_sd7ng"]
 radius = 35.014282
 
 [node name="Alien" type="RigidBody2D" unique_id=532844673]
+physics_material_override = SubResource("PhysicsMaterial_ewdm2")
+linear_damp = 0.3
+angular_damp = 0.3
 script = ExtResource("1_1ci6x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=18346821]
@@ -18,3 +24,5 @@ texture = ExtResource("2_1y1bf")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1054829355]
 stream = ExtResource("3_ewdm2")
+
+[connection signal="sleeping_state_changed" from="." to="." method="_on_sleeping_state_changed"]
