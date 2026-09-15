@@ -1,4 +1,7 @@
 extends Node2D
+class_name Cannon
+
+signal ammo_changed
 
 var power := 500.0
 var min_power := 10
@@ -21,6 +24,7 @@ func _physics_process(_delta: float) -> void:
 		alien.global_position = global_position
 		alien.apply_impulse(Vector2(1,0).rotated(angle) * power)
 		ammo -= 1
+		ammo_changed.emit()
 		can_fire = false
 		alien.sleeping_state_changed.connect(_on_alien_sleeping_state_changed.bind(alien))
 		alien.fell_off_world.connect(_on_alien_fell_off_world)
@@ -57,6 +61,7 @@ func _on_alien_timeout(alien) -> void:
 	if is_instance_valid(alien):
 		can_fire = true
 		alien.queue_free()		
+
 
 func _draw() -> void:
 		draw_circle(Vector2.ZERO, 45, Color.BLACK)

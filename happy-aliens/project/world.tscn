@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://5gtdslah2se8" path="res://cannon/cannon.tscn" id="3_gbfbk"]
 [ext_resource type="Texture2D" uid="uid://bw1ckujmvhnha" path="res://common/colored_grass.png" id="4_ioo17"]
 [ext_resource type="PackedScene" uid="uid://b5s2ibwutjn1i" path="res://tower/tower.tscn" id="5_wse8f"]
+[ext_resource type="PackedScene" uid="uid://ydgqyjehj6ru" path="res://hud.tscn" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b3ij7f7x6b2xb" path="res://sad_alien/sad_alien.tscn" id="6_ic0uy"]
 
 [node name="World" type="Node2D" unique_id=363297933]
@@ -26,3 +27,8 @@ position = Vector2(1069, 462)
 
 [node name="Sad_Alien" parent="." unique_id=689703200 instance=ExtResource("6_ic0uy")]
 position = Vector2(963, 266)
+
+[node name="HUD" parent="." unique_id=1258230424 node_paths=PackedStringArray("cannon") instance=ExtResource("6_dwbse")]
+offset_left = 5.0
+offset_right = 45.0
+cannon = NodePath("../Cannon")
