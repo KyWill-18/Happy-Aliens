@@ -24,5 +24,3 @@ texture = ExtResource("2_1y1bf")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1054829355]
 stream = ExtResource("3_ewdm2")
-
-[connection signal="sleeping_state_changed" from="." to="." method="_on_sleeping_state_changed"]

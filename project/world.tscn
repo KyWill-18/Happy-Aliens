@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://bd1r8mueol5jn" path="res://ground/ground.tscn" id="2_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://5gtdslah2se8" path="res://cannon/cannon.tscn" id="3_gbfbk"]
-[ext_resource type="Texture2D" uid="uid://bw1ckujmvhnha" path="res://common/colored_grass.png" id="4_ioo17"]
+[ext_resource type="Texture2D" uid="uid://bw1ckujmvhnha" path="res://colored_grass.png" id="4_ioo17"]
 [ext_resource type="PackedScene" uid="uid://b5s2ibwutjn1i" path="res://tower/tower.tscn" id="5_wse8f"]
-[ext_resource type="PackedScene" uid="uid://ydgqyjehj6ru" path="res://hud.tscn" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://ydgqyjehj6ru" path="res://hud/hud.tscn" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b3ij7f7x6b2xb" path="res://sad_alien/sad_alien.tscn" id="6_ic0uy"]
 
 [node name="World" type="Node2D" unique_id=363297933]
