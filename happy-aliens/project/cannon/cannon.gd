@@ -14,10 +14,9 @@ var max_angle := 0
 var ammo := 5
 var can_fire := true
 
-
 #basic firing
 func _physics_process(_delta: float) -> void:
-	if Input.is_action_just_pressed("fire") && can_fire && ammo > 0:
+	if Input.is_action_just_pressed("fire") and can_fire and ammo > 0:
 		$AudioStreamPlayer2D.play()
 		var alien : RigidBody2D = preload("res://alien/alien.tscn").instantiate()
 		add_sibling(alien)
@@ -29,7 +28,7 @@ func _physics_process(_delta: float) -> void:
 		alien.sleeping_state_changed.connect(_on_alien_sleeping_state_changed.bind(alien))
 		alien.fell_off_world.connect(_on_alien_fell_off_world)
 		get_tree().create_timer(4.0).timeout.connect(_on_alien_timeout.bind(alien))
-		
+
 	#angle controls
 	if Input.is_action_just_pressed("angle_up"):
 		angle -= 0.1
@@ -45,23 +44,23 @@ func _physics_process(_delta: float) -> void:
 		power -= 50
 
 	power = clamp(power, min_power, max_power)
-	
-	
+
+
 func _on_alien_fell_off_world() -> void:
-	can_fire = true	
+	can_fire = true
 
 
 func _on_alien_sleeping_state_changed(alien) -> void:
-	if is_instance_valid(alien) && alien.sleeping:
+	if is_instance_valid(alien) and alien.sleeping:
 		can_fire = true
 		alien.queue_free()
-		
-		
+
+
 func _on_alien_timeout(alien) -> void:
 	if is_instance_valid(alien):
 		can_fire = true
-		alien.queue_free()		
+		alien.queue_free()
 
 
 func _draw() -> void:
-		draw_circle(Vector2.ZERO, 45, Color.BLACK)
+	draw_circle(Vector2.ZERO, 45, Color.BLACK)
