@@ -2,6 +2,7 @@ extends Node2D
 class_name Cannon
 
 signal ammo_changed
+signal  out_of_ammo
 
 var power := 500.0
 var min_power := 10
@@ -47,20 +48,26 @@ func _physics_process(_delta: float) -> void:
 
 
 func _on_alien_fell_off_world() -> void:
-	can_fire = true
+	_finish_projectile()
 
 
 func _on_alien_sleeping_state_changed(alien) -> void:
 	if is_instance_valid(alien) and alien.sleeping:
-		can_fire = true
+		_finish_projectile()
 		alien.queue_free()
 
 
 func _on_alien_timeout(alien) -> void:
 	if is_instance_valid(alien):
-		can_fire = true
+		_finish_projectile()
 		alien.queue_free()
 
 
 func _draw() -> void:
 	draw_circle(Vector2.ZERO, 45, Color.BLACK)
+	
+	
+func _finish_projectile() -> void:
+	can_fire = true
+	if ammo <= 0:
+		out_of_ammo.emit()	

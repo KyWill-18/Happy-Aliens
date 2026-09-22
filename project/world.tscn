@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c5oqcjuglpfs7"]
 
+[ext_resource type="Script" uid="uid://uebp0lsi53n3" path="res://world.gd" id="1_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://bd1r8mueol5jn" path="res://ground/ground.tscn" id="2_pkg7o"]
 [ext_resource type="PackedScene" uid="uid://5gtdslah2se8" path="res://cannon/cannon.tscn" id="3_gbfbk"]
 [ext_resource type="Texture2D" uid="uid://bw1ckujmvhnha" path="res://colored_grass.png" id="4_ioo17"]
@@ -7,8 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://ydgqyjehj6ru" path="res://hud/hud.tscn" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://b3ij7f7x6b2xb" path="res://sad_alien/sad_alien.tscn" id="6_ic0uy"]
 
-[node name="World" type="Node2D" unique_id=363297933]
+[node name="World" type="Node2D" unique_id=363297933 node_paths=PackedStringArray("cannon", "sad_alien")]
 position = Vector2(1, 2)
+script = ExtResource("1_pkg7o")
+cannon = NodePath("Cannon")
+sad_alien = NodePath("Sad_Alien")
 
 [node name="Ground" parent="." unique_id=275491657 instance=ExtResource("2_pkg7o")]
 position = Vector2(1, 202)

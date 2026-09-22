@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://dk1myobbwd603"]
+
+[ext_resource type="Script" uid="uid://bdvmasrgfukyj" path="res://title/title.gd" id="1_8ugr4"]
+[ext_resource type="Script" uid="uid://dmoe88kxk1hjl" path="res://title/stars.gd" id="2_0ipqg"]
+[ext_resource type="FontFile" uid="uid://btphu47dnroo0" path="res://title/Kenney Blocks.ttf" id="3_rfx1c"]
+[ext_resource type="Texture2D" uid="uid://b0enq6h8nphap" path="res://title/shipPink_manned.png" id="4_sq87r"]
+[ext_resource type="Texture2D" uid="uid://ch2tuhak08bnw" path="res://title/laserPink2.png" id="5_yuv0l"]
+[ext_resource type="Texture2D" uid="uid://bc34u70w1mfvj" path="res://title/laserPink_burst.png" id="6_aqtde"]
+[ext_resource type="Texture2D" uid="uid://cgcab6nryrcwk" path="res://title/laserPink_groundBurst.png" id="7_lmwp0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nsmg2"]
+line_spacing = -25.0
+font = ExtResource("3_rfx1c")
+font_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64gp6"]
+bg_color = Color(0.94509804, 0.6117647, 0.7176471, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_awtvj"]
+font = ExtResource("3_rfx1c")
+font_size = 43
+font_color = Color(1.0849534, 1.0849534, 1.0849534, 1)
+
+[node name="Title" type="Node2D" unique_id=2040541148]
+script = ExtResource("1_8ugr4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1446780338]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0010269961, 0, 0.020785918, 1)
+
+[node name="Stars" type="Node2D" parent="." unique_id=812112067]
+script = ExtResource("2_0ipqg")
+
+[node name="WinMessage" type="Label" parent="." unique_id=79683783]
+offset_left = 367.0
+offset_top = 16.0
+offset_right = 839.0
+offset_bottom = 319.0
+text = "YOU WIN!
+PLAY AGAIN?"
+label_settings = SubResource("LabelSettings_nsmg2")
+horizontal_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1726349707]
+offset_left = 397.0
+offset_top = 475.0
+offset_right = 770.0
+offset_bottom = 584.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_64gp6")
+
+[node name="PressStart" type="Label" parent="PanelContainer" unique_id=138412471]
+layout_mode = 2
+text = "PRESS START"
+label_settings = SubResource("LabelSettings_awtvj")
+horizontal_alignment = 1
+
+[node name="UFO" type="Sprite2D" parent="." unique_id=1286025732]
+position = Vector2(187.5181, 167.31511)
+rotation = -0.5157059
+scale = Vector2(1.4291939, 1.3869497)
+texture = ExtResource("4_sq87r")
+
+[node name="Laser" type="Sprite2D" parent="." unique_id=1750270412]
+position = Vector2(263, 284)
+rotation = 2.6179938
+scale = Vector2(1.1860399, 1.7144043)
+texture = ExtResource("5_yuv0l")
+
+[node name="LaserBeam" type="Sprite2D" parent="." unique_id=916552542]
+position = Vector2(297, 356.00003)
+rotation = -0.30782014
+scale = Vector2(0.8651702, 0.53977805)
+texture = ExtResource("6_aqtde")
+
+[node name="ButtonBeam" type="Sprite2D" parent="." unique_id=1926858193]
+position = Vector2(407.00003, 454)
+rotation = -0.5272874
+scale = Vector2(0.877907, 0.8333333)
+texture = ExtResource("7_lmwp0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1504377977]
