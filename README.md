@@ -8,6 +8,7 @@ In this game, the player has to fire a happy alien to strike a sad grey alien an
 - S/DOWN ARROW: Decrease Angle
 - A/LEFT ARROW: Decrease Power
 - D/RIGHT ARROW: Increase Power
+- SPACE: FIRE!
 
 ## Increment 1: 2D Physics-Based Gameplay
 
@@ -50,4 +51,23 @@ I have completed all 4 user stories and have therefore earned an A:
   https://freesound.org/people/Redeam/sounds/815696/
 
 - Images are from [Kenney's Physics Assets pack](https://kenney.nl/assets/physics-assets),
+  [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
+
+
+## Increment 3: Titles and Animation
+
+### Self-Evaluation
+
+I have completed all 3 user stories and have therefore earned an A:
+
+- A main menu screen that the player starts from and returns to after a game sessions ends
+- Clear win and lose conditions
+- An animated title screen with twinkling starfield and a blinking start prompt, built with tween
+
+### Third-Party Assets
+
+- UFO ship and laser images from [Kenney's Alien UFO pack](https://kenney.nl/assets/alien-ufo-pack),
+  [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
+
+- "Kenney Blocks" font from [Kenney's font collection](https://kenney.nl/assets),
   [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
