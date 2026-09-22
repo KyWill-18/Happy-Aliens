@@ -27,7 +27,6 @@ text = "Ammo: "
 label_settings = SubResource("LabelSettings_37p78")
 
 [node name="ControlsLabels" type="Label" parent="." unique_id=546720370]
-visible = false
 layout_mode = 0
 offset_right = 222.0
 offset_bottom = 102.0

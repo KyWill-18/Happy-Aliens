@@ -65,9 +65,9 @@ func _on_alien_timeout(alien) -> void:
 
 func _draw() -> void:
 	draw_circle(Vector2.ZERO, 45, Color.BLACK)
-	
-	
+
+
 func _finish_projectile() -> void:
 	can_fire = true
 	if ammo <= 0:
-		out_of_ammo.emit()	
+		out_of_ammo.emit()

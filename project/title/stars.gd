@@ -13,8 +13,8 @@ func _ready() -> void:
 		star.scale = Vector2.ZERO
 		add_child(star)
 		_loop_star(star, rng)
-		
-		
+
+
 func _loop_star(star: ColorRect, rng: RandomNumberGenerator) -> void:
 	star.position = Vector2(rng.randf_range(0, 1152), randf_range(0, 648))
 	var tween := create_tween()

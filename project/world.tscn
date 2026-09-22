@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://b3ij7f7x6b2xb" path="res://sad_alien/sad_alien.tscn" id="6_ic0uy"]
 
 [node name="World" type="Node2D" unique_id=363297933 node_paths=PackedStringArray("cannon", "sad_alien")]
-position = Vector2(1, 2)
 script = ExtResource("1_pkg7o")
 cannon = NodePath("Cannon")
 sad_alien = NodePath("Sad_Alien")
