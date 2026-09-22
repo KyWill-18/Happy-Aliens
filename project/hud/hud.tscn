@@ -34,7 +34,8 @@ text = "W/UP ARROW: Increase Angle
 S/DOWN ARROW: Decrease Angle
 A/LEFT ARROW: Decrease Power
 D/RIGHT ARROW: Increase Power
-SPACE: FIRE!"
+SPACE: FIRE!
+OBJECTIVE: HIT THE SAD ALIEN!"
 label_settings = SubResource("LabelSettings_64ctp")
 uppercase = true
 
