@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch2tuhak08bnw"
-path="res://.godot/imported/laserPink2.png-aacba14ff4b5ff02bfa2a4f666915d97.ctex"
+uid="uid://bc34u70w1mfvj"
+path="res://.godot/imported/laserPink_burst.png-7472542d9eeb13470a9e416f9d011356.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://laserPink2.png"
-dest_files=["res://.godot/imported/laserPink2.png-aacba14ff4b5ff02bfa2a4f666915d97.ctex"]
+source_file="res://title/laserPink_burst.png"
+dest_files=["res://.godot/imported/laserPink_burst.png-7472542d9eeb13470a9e416f9d011356.ctex"]
 
 [params]
 

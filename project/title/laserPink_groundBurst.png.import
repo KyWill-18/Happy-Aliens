@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0enq6h8nphap"
-path="res://.godot/imported/shipPink_manned.png-dca794a444b1b13ba210e2c8a0a6c753.ctex"
+uid="uid://cgcab6nryrcwk"
+path="res://.godot/imported/laserPink_groundBurst.png-70969c0681298db510198f88f68a62a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://shipPink_manned.png"
-dest_files=["res://.godot/imported/shipPink_manned.png-dca794a444b1b13ba210e2c8a0a6c753.ctex"]
+source_file="res://title/laserPink_groundBurst.png"
+dest_files=["res://.godot/imported/laserPink_groundBurst.png-70969c0681298db510198f88f68a62a6.ctex"]
 
 [params]
 
