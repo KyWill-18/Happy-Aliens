@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cg7u583xmy84a"]
+
+[ext_resource type="Script" uid="uid://bdvmasrgfukyj" path="res://title/title.gd" id="1_crako"]
+[ext_resource type="Script" uid="uid://dmoe88kxk1hjl" path="res://title/stars.gd" id="2_nx56k"]
+
+[node name="Title" type="Node2D" unique_id=2040541148]
+script = ExtResource("1_crako")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1446780338]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0010269961, 0, 0.020785918, 1)
+
+[node name="Stars" type="Node2D" parent="." unique_id=812112067]
+script = ExtResource("2_nx56k")
+
+[node name="GameTitle" type="Label" parent="." unique_id=79683783]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PressStart" type="Label" parent="." unique_id=138412471]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="UFO" type="Sprite2D" parent="." unique_id=1286025732]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1504377977]
