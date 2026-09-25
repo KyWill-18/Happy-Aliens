@@ -7,4 +7,4 @@ func _on_body_entered(body: Node) -> void:
 		won.emit()
 		$AudioStreamPlayer2D.play()
 		$Sprite2D.texture = preload("res://sad_alien/alienGreen_round.png")
-		$Sprite2D.modulate = Color(1, 1, 1, 1)
+		$Sprite2D.modulate = Color.WHITE
